@@ -11,3 +11,45 @@
 .selected-row td {
   color: #4b20a8;
 }
+/* Selected truth-table row */
+table tr.selected-row {
+  background: #e8ddff !important;
+  box-shadow: inset 5px 0 0 #7438df;
+}
+
+table tr.selected-row td {
+  background: #e8ddff !important;
+  color: #4b2491 !important;
+  font-weight: 700;
+}
+
+/* Keep result distribution inside the page */
+#barChart,
+#distributionBars {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.bar-item,
+.distribution-item {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bar-track,
+.distribution-track {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bar-fill,
+.distribution-fill {
+  max-width: 100%;
+  box-sizing: border-box;
+}
