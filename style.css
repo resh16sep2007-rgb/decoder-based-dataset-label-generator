@@ -23,30 +23,7 @@ table tr.selected-row td {
   font-weight: 700;
 }
 
-/* Keep result distribution inside the page */
-#barChart,
-#distributionBars {
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
 
-.bar-item,
-.distribution-item {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.bar-track,
-.distribution-track {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-}
 
 .bar-fill,
 .distribution-fill {
