@@ -53,3 +53,73 @@ table tr.selected-row td {
   max-width: 100%;
   box-sizing: border-box;
 }
+/* FINAL FIX - CLASS-WISE SAMPLE DISTRIBUTION */
+
+#barChart,
+#distributionBars {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+#barChart > *,
+#distributionBars > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.bar-item,
+.distribution-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.bar-label,
+.distribution-label {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.bar-track,
+.distribution-track {
+  width: 100% !important;
+  height: 12px !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
+}
+
+.bar-fill,
+.distribution-fill {
+  display: block !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
+}
+
+/* Prevent the Results card from making the whole webpage wider */
+section,
+.card,
+.results-card {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
