@@ -137,16 +137,12 @@ function createChart() {
     const binary = i.toString(2).padStart(3, "0");
 
     const item = document.createElement("div");
-    item.className = "bar-item";
+    item.className = "bar-col";
 
     item.innerHTML = `
-      <div class="bar-label">
-        <span>${classCodes[binary]}</span>
-        <strong>10</strong>
-      </div>
-      <div class="bar-track">
-        <div class="bar-fill" style="width:100%"></div>
-      </div>
+      <b>10</b>
+      <div class="bar"></div>
+      <span>${classCodes[binary]}</span>
     `;
 
     chart.appendChild(item);
