@@ -131,22 +131,58 @@ function runTests() {
 
 function createChart() {
   const chart = document.getElementById("barChart");
-  chart.innerHTML = "";
 
-  for (let i = 0; i < 8; i++) {
-    const binary = i.toString(2).padStart(3, "0");
+  if (!chart) return;
 
-    const item = document.createElement("div");
-    item.className = "bar-col";
-
-    item.innerHTML = `
+  chart.innerHTML = `
+    <div class="bar-col">
       <b>10</b>
       <div class="bar"></div>
-      <span>${classCodes[binary]}</span>
-    `;
+      <span>Class_0</span>
+    </div>
 
-    chart.appendChild(item);
-  }
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_1</span>
+    </div>
+
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_2</span>
+    </div>
+
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_3</span>
+    </div>
+
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_4</span>
+    </div>
+
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_5</span>
+    </div>
+
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_6</span>
+    </div>
+
+    <div class="bar-col">
+      <b>10</b>
+      <div class="bar"></div>
+      <span>Class_7</span>
+    </div>
+  `;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
